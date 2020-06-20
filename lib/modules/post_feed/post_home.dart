@@ -85,7 +85,6 @@ class _postHomeUIState extends State<postHomeUI> {
                           ),
                         ),
                       )
-
                   ],),
                   Padding(padding: EdgeInsets.only(top:20.0)),
                   Row(
@@ -127,7 +126,6 @@ class _postHomeUIState extends State<postHomeUI> {
                                     fontWeight: FontWeight.w300,
                                   )
                                   ),
-                                  
                               )
                             ]
                           ),
@@ -185,8 +183,7 @@ class _postHomeUIState extends State<postHomeUI> {
                         height:150.0,
                         width:200.0,
                         child: Card(
-                          color:Color.fromRGBO(
-                            235, 180, 36,1.0),
+                          color:Color.fromRGBO(235, 180, 36,1.0),
                           shape: RoundedRectangleBorder(
                             borderRadius:BorderRadius.circular(10.0)
                           ),
@@ -239,8 +236,7 @@ class _postHomeUIState extends State<postHomeUI> {
                                     letterSpacing: 2.0,
                                     fontWeight: FontWeight.w300,
                                   )
-                                  ),
-                                  
+                                  ),   
                               )
                             ]
                           ),
@@ -279,7 +275,6 @@ class _postHomeUIState extends State<postHomeUI> {
                                     fontWeight: FontWeight.w300,
                                   )
                                   ),
-                                  
                               )
                             ]
                           ),
@@ -317,7 +312,6 @@ class _postHomeUIState extends State<postHomeUI> {
                           ),
                         ),
                       ),
-
                   ],),
                   Padding(padding: EdgeInsets.only(top: 20.0)),
                   Row(

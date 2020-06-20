@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:line_awesome_icons/line_awesome_icons.dart';
 import 'package:file_picker/file_picker.dart';
 
-class needSimranUI extends StatefulWidget {
+class needAdviceUI extends StatefulWidget {
   @override
-  _needSimranUIState createState() => _needSimranUIState();
+  _needAdviceUIState createState() => _needAdviceUIState();
 }
 
-class _needSimranUIState extends State<needSimranUI> {
+class _needAdviceUIState extends State<needAdviceUI> {
 
   final GlobalKey<FormState> _formKey1 =GlobalKey<FormState>();
   
@@ -51,7 +51,7 @@ class _needSimranUIState extends State<needSimranUI> {
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(70.0),
         child: AppBar(
-          backgroundColor: Color.fromRGBO(236, 55, 80,1.0),
+          backgroundColor: Color.fromRGBO(235, 180, 36,1.0),
           centerTitle:true,
           leading: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -84,7 +84,7 @@ class _needSimranUIState extends State<needSimranUI> {
                         size:40.0,
                       ),
                       Text(
-                        "NeedSimran",
+                        "NeedAdvice",
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 40.0,
@@ -111,7 +111,7 @@ class _needSimranUIState extends State<needSimranUI> {
                       autovalidate: true,
                       child:new Theme(
                         data:new ThemeData(
-                        primaryColor: Color.fromRGBO(236, 55, 80,1.0),
+                        primaryColor: Color.fromRGBO(235, 180, 36,1.0),
                         inputDecorationTheme: new InputDecorationTheme(
                           labelStyle:new TextStyle(
                           color: Colors.black,
@@ -149,14 +149,14 @@ class _needSimranUIState extends State<needSimranUI> {
                                  borderRadius:BorderRadius.circular(15.0),
                                  borderSide: BorderSide(
                                    width:3.0,
-                                   color: Color.fromRGBO(236, 55, 80,1.0),
+                                   color: Color.fromRGBO(235, 180, 36,1.0),
                                  ),
                                ),
                                enabledBorder: new OutlineInputBorder(
                                  borderRadius:new BorderRadius.circular(15.0),
                                  borderSide:BorderSide(
                                    width:3.0,
-                                   color:Color.fromRGBO(236, 55, 80,1.0),
+                                   color:Color.fromRGBO(235, 180, 36,1.0),
                                 )
                                ),
                                hintStyle: TextStyle(
@@ -204,14 +204,14 @@ class _needSimranUIState extends State<needSimranUI> {
                                      borderRadius:BorderRadius.circular(15.0),
                                      borderSide: BorderSide(
                                        width:3.0,
-                                       color: Color.fromRGBO(236, 55, 80,1.0),
+                                       color: Color.fromRGBO(235, 180, 36,1.0),
                                      ),
                                    ),
                                    enabledBorder: new OutlineInputBorder(
                                      borderRadius:new BorderRadius.circular(15.0),
                                      borderSide:BorderSide(
                                        width:3.0,
-                                       color:Color.fromRGBO(236, 55, 80,1.0),
+                                       color:Color.fromRGBO(235, 180, 36,1.0),
                                     )
                                    ),
                                    labelStyle: TextStyle(
@@ -236,7 +236,7 @@ class _needSimranUIState extends State<needSimranUI> {
                           //   shape: RoundedRectangleBorder(
                           //     borderRadius:new BorderRadius.circular(10.0)
                           //   ),
-                          //   color: Color.fromRGBO(236, 55, 80,1.0),
+                          //   color: Color.fromRGBO(235, 180, 36,1.0),
                           //   onPressed:(){},
                           //   child: new Text(
                           //     "Attach Files",
@@ -252,7 +252,7 @@ class _needSimranUIState extends State<needSimranUI> {
                             shape: RoundedRectangleBorder(
                               borderRadius:new BorderRadius.circular(10.0)
                             ),
-                            color: Color.fromRGBO(236, 55, 80,1.0),
+                            color: Color.fromRGBO(235, 180, 36,1.0),
                             onPressed:(){},
                             child: new Text(
                               "Cancel",
@@ -269,7 +269,7 @@ class _needSimranUIState extends State<needSimranUI> {
                                 shape: RoundedRectangleBorder(
                                   borderRadius:new BorderRadius.circular(10.0)
                                 ),
-                                color: Color.fromRGBO(236, 55, 80,1.0),
+                                color: Color.fromRGBO(235, 180, 36,1.0),
                                 onPressed:(){},
                                 child: new Text(
                                   "Confirm",

@@ -2,22 +2,25 @@ import 'package:flutter/material.dart';
 import 'package:line_awesome_icons/line_awesome_icons.dart';
 import 'package:file_picker/file_picker.dart';
 
-class needSimranUI extends StatefulWidget {
+class project_ideaUI extends StatefulWidget {
   @override
-  _needSimranUIState createState() => _needSimranUIState();
+  _project_ideaUIState createState() => _project_ideaUIState();
 }
 
-class _needSimranUIState extends State<needSimranUI> {
+class _project_ideaUIState extends State<project_ideaUI> {
 
   final GlobalKey<FormState> _formKey1 =GlobalKey<FormState>();
   
   FocusNode _focusNode1;
-  FocusNode _focusNode2;   
+  FocusNode _focusNode2;
+  FocusNode _focusNode3;
+
   @override
   void initState(){
     super.initState();
     _focusNode1 =FocusNode();
     _focusNode2 =FocusNode();
+    _focusNode3 =FocusNode();
     
   }
 
@@ -33,6 +36,10 @@ class _needSimranUIState extends State<needSimranUI> {
     _focusNode2.dispose();
     super.dispose();
   }
+  void dispose3(){
+    _focusNode3.dispose();
+    super.dispose();
+  }
 
   void _requestFocus1(){
     setState(() {
@@ -44,6 +51,14 @@ class _needSimranUIState extends State<needSimranUI> {
       FocusScope.of(context).requestFocus(_focusNode2);
     });
   }
+
+  void _requestFocus3(){
+    setState(() {
+      FocusScope.of(context).requestFocus(_focusNode3);
+    });
+  }
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(    
@@ -51,7 +66,7 @@ class _needSimranUIState extends State<needSimranUI> {
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(70.0),
         child: AppBar(
-          backgroundColor: Color.fromRGBO(236, 55, 80,1.0),
+          backgroundColor: Color.fromRGBO(51, 142, 218,1.0),
           centerTitle:true,
           leading: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -84,7 +99,7 @@ class _needSimranUIState extends State<needSimranUI> {
                         size:40.0,
                       ),
                       Text(
-                        "NeedSimran",
+                        "ProjectIdea",
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 40.0,
@@ -111,7 +126,7 @@ class _needSimranUIState extends State<needSimranUI> {
                       autovalidate: true,
                       child:new Theme(
                         data:new ThemeData(
-                        primaryColor: Color.fromRGBO(236, 55, 80,1.0),
+                        primaryColor: Color.fromRGBO(51, 142, 218,1.0),
                         inputDecorationTheme: new InputDecorationTheme(
                           labelStyle:new TextStyle(
                           color: Colors.black,
@@ -149,14 +164,14 @@ class _needSimranUIState extends State<needSimranUI> {
                                  borderRadius:BorderRadius.circular(15.0),
                                  borderSide: BorderSide(
                                    width:3.0,
-                                   color: Color.fromRGBO(236, 55, 80,1.0),
+                                   color: Color.fromRGBO(51, 142, 218,1.0),
                                  ),
                                ),
                                enabledBorder: new OutlineInputBorder(
                                  borderRadius:new BorderRadius.circular(15.0),
                                  borderSide:BorderSide(
                                    width:3.0,
-                                   color:Color.fromRGBO(236, 55, 80,1.0),
+                                   color:Color.fromRGBO(51, 142, 218,1.0),
                                 )
                                ),
                                hintStyle: TextStyle(
@@ -179,7 +194,7 @@ class _needSimranUIState extends State<needSimranUI> {
                             constraints: new BoxConstraints(
                               minWidth: 400.0,
                               maxWidth: 400.0,
-                              minHeight: 400.0,
+                              minHeight: 80.0,
                               maxHeight: 500.0,
                             ),
                               child: SingleChildScrollView(
@@ -188,9 +203,9 @@ class _needSimranUIState extends State<needSimranUI> {
                                   onTap: _requestFocus2,
                                   maxLines: null,
                                   keyboardType: TextInputType.multiline,
-                                  // onFieldSubmitted:(v){
-                                  //   FocusScope.of(context).requestFocus(_focusNode2);
-                                  // },
+                                  onFieldSubmitted:(v){
+                                    FocusScope.of(context).requestFocus(_focusNode3);
+                                  },
                                   textInputAction:TextInputAction.none,
                                   //onSaved: 
                                   cursorColor: Colors.white,
@@ -204,14 +219,14 @@ class _needSimranUIState extends State<needSimranUI> {
                                      borderRadius:BorderRadius.circular(15.0),
                                      borderSide: BorderSide(
                                        width:3.0,
-                                       color: Color.fromRGBO(236, 55, 80,1.0),
+                                       color: Color.fromRGBO(51, 142, 218,1.0),
                                      ),
                                    ),
                                    enabledBorder: new OutlineInputBorder(
                                      borderRadius:new BorderRadius.circular(15.0),
                                      borderSide:BorderSide(
                                        width:3.0,
-                                       color:Color.fromRGBO(236, 55, 80,1.0),
+                                       color:Color.fromRGBO(51, 142, 218,1.0),
                                     )
                                    ),
                                    labelStyle: TextStyle(
@@ -225,7 +240,60 @@ class _needSimranUIState extends State<needSimranUI> {
                           ),
                         ],
                       ),
-                      Padding(padding: EdgeInsets.only(top:150.0)),
+                       Padding(padding: EdgeInsets.only(top:30.0)),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          ConstrainedBox(
+                            constraints: new BoxConstraints(
+                              minWidth: 400.0,
+                              maxWidth: 400.0,
+                              minHeight: 80.0,
+                              maxHeight: 500.0,
+                            ),
+                              child: SingleChildScrollView(
+                                child: new TextFormField(
+                                  focusNode: _focusNode3,
+                                  onTap: _requestFocus3,
+                                  maxLines: null,
+                                  keyboardType: TextInputType.multiline,
+                                  // onFieldSubmitted:(v){
+                                  //   FocusScope.of(context).requestFocus(_focusNode2);
+                                  // },
+                                  textInputAction:TextInputAction.done,
+                                  //onSaved: 
+                                  cursorColor: Colors.white,
+                                  style: TextStyle(
+                                    fontSize:20.0,
+                                    color:Colors.white,
+                                  ),
+                                  decoration:new InputDecoration(
+                                    labelText: "The problem it solves",
+                                    border: new OutlineInputBorder(
+                                     borderRadius:BorderRadius.circular(15.0),
+                                     borderSide: BorderSide(
+                                       width:3.0,
+                                       color: Color.fromRGBO(51, 142, 218,1.0),
+                                     ),
+                                   ),
+                                   enabledBorder: new OutlineInputBorder(
+                                     borderRadius:new BorderRadius.circular(15.0),
+                                     borderSide:BorderSide(
+                                       width:3.0,
+                                       color:Color.fromRGBO(51, 142, 218,1.0),
+                                    )
+                                   ),
+                                   labelStyle: TextStyle(
+                                      fontSize: 20.0,
+                                      color:Colors.white,
+                                   )
+                                  )
+                                ),
+                              ),
+                          ),
+                        ],
+                      ),
+                      Padding(padding: EdgeInsets.only(top:320.0)),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: <Widget>[
@@ -236,7 +304,7 @@ class _needSimranUIState extends State<needSimranUI> {
                           //   shape: RoundedRectangleBorder(
                           //     borderRadius:new BorderRadius.circular(10.0)
                           //   ),
-                          //   color: Color.fromRGBO(236, 55, 80,1.0),
+                          //   color: Color.fromRGBO(51, 142, 218,1.0),
                           //   onPressed:(){},
                           //   child: new Text(
                           //     "Attach Files",
@@ -252,8 +320,11 @@ class _needSimranUIState extends State<needSimranUI> {
                             shape: RoundedRectangleBorder(
                               borderRadius:new BorderRadius.circular(10.0)
                             ),
-                            color: Color.fromRGBO(236, 55, 80,1.0),
-                            onPressed:(){},
+                            color: Color.fromRGBO(51, 142, 218,1.0),
+                            onPressed: (){
+                              setState(() {
+                                Navigator.of(context).popAndPushNamed('/post');
+                              });},
                             child: new Text(
                               "Cancel",
                               style:TextStyle(
@@ -269,8 +340,11 @@ class _needSimranUIState extends State<needSimranUI> {
                                 shape: RoundedRectangleBorder(
                                   borderRadius:new BorderRadius.circular(10.0)
                                 ),
-                                color: Color.fromRGBO(236, 55, 80,1.0),
-                                onPressed:(){},
+                                color: Color.fromRGBO(51, 142, 218,1.0),
+                                onPressed: (){
+                                  setState(() {
+                                    Navigator.of(context).popAndPushNamed('/post');
+                                  });},
                                 child: new Text(
                                   "Confirm",
                                   style:TextStyle(
