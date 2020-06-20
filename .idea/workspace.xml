@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="300efc1e-91e4-4b9c-92e5-5c82337f6f98" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/modules/home/Explore.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/modules/home/Explore.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/modules/home/home.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/modules/home/home.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/modules/login/login.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/modules/login/login.dart" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="H:\flutterhacks\project_x\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1dEKwIw3rOHtUCPoFIhFnAx11yO" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="dart.analysis.tool.window.force.activate" value="false" />
+    <property name="io.flutter.reload.alreadyRun" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="300efc1e-91e4-4b9c-92e5-5c82337f6f98" name="Default Changelist" comment="" />
+      <created>1591985049546</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591985049546</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="349" y="51" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1592330931294">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="349" y="51" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1592330931294" />
+    <state x="463" y="106" key="FileChooserDialogImpl" timestamp="1591987537399">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="106" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1591987537399" />
+    <state width="1307" height="174" key="GridCell.Tab.0.bottom" timestamp="1592336196597">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1307" height="174" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592336196597" />
+    <state width="1307" height="174" key="GridCell.Tab.0.center" timestamp="1592336196596">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1307" height="174" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1592336196596" />
+    <state width="1307" height="174" key="GridCell.Tab.0.left" timestamp="1592336196596">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1307" height="174" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1592336196596" />
+    <state width="1307" height="174" key="GridCell.Tab.0.right" timestamp="1592336196597">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1307" height="174" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1592336196597" />
+    <state x="164" y="0" key="SettingsEditor" timestamp="1592308311767">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="164" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1592308311767" />
+    <state x="110" y="120" width="1146" height="488" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1592661049505">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="110" y="120" width="1146" height="488" key="com.android.tools.idea.avdmanager.AvdListDialog/0.0.1366.728@0.0.1366.728" timestamp="1592661049505" />
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1592661007182">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1592661007182" />
+    <state x="255" y="161" key="run.anything.popup" timestamp="1592324678387">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="255" y="161" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1592324678387" />
+  </component>
+</project>
