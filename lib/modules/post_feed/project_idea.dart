@@ -293,7 +293,7 @@ class _project_ideaUIState extends State<project_ideaUI> {
                           ),
                         ],
                       ),
-                      Padding(padding: EdgeInsets.only(top:320.0)),
+                      Padding(padding: EdgeInsets.only(top:360.0)),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: <Widget>[

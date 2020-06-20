@@ -253,7 +253,10 @@ class _needHelpUIState extends State<needHelpUI> {
                               borderRadius:new BorderRadius.circular(10.0)
                             ),
                             color: Color.fromRGBO(255, 140, 55,1.0),
-                            onPressed:(){},
+                            onPressed: (){
+                              setState(() {
+                                Navigator.of(context).popAndPushNamed('/post');
+                              });},
                             child: new Text(
                               "Cancel",
                               style:TextStyle(
@@ -270,7 +273,10 @@ class _needHelpUIState extends State<needHelpUI> {
                                   borderRadius:new BorderRadius.circular(10.0)
                                 ),
                                 color: Color.fromRGBO(255, 140, 55,1.0),
-                                onPressed:(){},
+                                onPressed: (){
+                                  setState(() {
+                                    Navigator.of(context).popAndPushNamed('/post');
+                                  });},
                                 child: new Text(
                                   "Confirm",
                                   style:TextStyle(

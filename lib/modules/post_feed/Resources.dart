@@ -320,7 +320,10 @@ class _resourcesUIState extends State<resourcesUI> {
                               borderRadius:new BorderRadius.circular(10.0)
                             ),
                             color: Color.fromRGBO(132, 146, 166,1.0),
-                            onPressed:(){},
+                            onPressed: (){
+                              setState(() {
+                                Navigator.of(context).popAndPushNamed('/post');
+                              });},
                             child: new Text(
                               "Cancel",
                               style:TextStyle(
@@ -337,7 +340,10 @@ class _resourcesUIState extends State<resourcesUI> {
                                   borderRadius:new BorderRadius.circular(10.0)
                                 ),
                                 color: Color.fromRGBO(132, 146, 166,1.0),
-                                onPressed:(){},
+                                onPressed: (){
+                                  setState(() {
+                                    Navigator.of(context).popAndPushNamed('/post');
+                                  });},
                                 child: new Text(
                                   "Confirm",
                                   style:TextStyle(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:line_awesome_icons/line_awesome_icons.dart';
 
 class ExploreUI extends StatefulWidget {
   ExploreUI({Key key}) : super(key:key);
@@ -25,6 +26,9 @@ with SingleTickerProviderStateMixin {
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(200.0),
         child: AppBar(
+          leading: IconButton(
+            icon: Icon(LineAwesomeIcons.arrow_left,color: Colors.white,size: 0.0,),
+            onPressed:(){}),
           centerTitle:false,
           flexibleSpace:Container(
             margin: EdgeInsets.only(left:20.0,bottom:10.0,right:20.0),

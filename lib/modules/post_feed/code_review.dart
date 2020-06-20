@@ -119,6 +119,32 @@ class _codeReviewUIState extends State<codeReviewUI> {
                   ),
                 ],
               ),
+              Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: <Widget>[
+                      MaterialButton(
+                                height: 50.0,
+                                minWidth: 100.0,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius:new BorderRadius.circular(10.0)
+                                ),
+                                color: Color.fromRGBO(51, 214, 166,1.0),
+                                onPressed:(){
+                                  setState(() {
+                                    Navigator.of(context).popAndPushNamed('/post');
+                                  });
+                                },
+                                child: new Text(
+                                  "Back to Home",
+                                  style:TextStyle(
+                                    color:Colors.white,
+                                    fontSize:25.0,
+                                    fontWeight:FontWeight.w400
+                          )
+                        ),
+                      ),
+                    ],
+                  ),
             ],
           )
 

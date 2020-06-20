@@ -33,15 +33,20 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return new MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: project_ideaUI(),
+        home: HomeUI(),
         routes: <String,WidgetBuilder>{
           //'/login':(_) =>new LoginPage(),
+          '/home':(_) =>new HomeUI(),
           '/edit':(_) =>new editProfile(),
           '/post':(_) =>new postHomeUI(),
           '/needsimran':(_) =>new needSimranUI(),
           '/needhelp':(_) =>new needHelpUI(),
           '/needadvice':(_) =>new needAdviceUI(),
           '/codereview':(_) =>new codeReviewUI(),
+          '/designreview':(_) =>new designReviewUI(),
+          '/projectidea':(_) =>new project_ideaUI(),
+          '/resources':(_) =>new resourcesUI(),
+          '/linkedin':(_) =>new linkedINUI(),
         },
         theme:new ThemeData(
           scaffoldBackgroundColor: Colors.black,

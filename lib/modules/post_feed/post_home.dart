@@ -1,6 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:line_awesome_icons/line_awesome_icons.dart';
+import 'package:project_x/modules/home/home.dart';
+import 'package:project_x/modules/post_feed/Resources.dart';
+import 'package:project_x/modules/post_feed/code_review.dart';
+import 'package:project_x/modules/post_feed/design_review.dart';
+import 'package:project_x/modules/post_feed/linkedin.dart';
+import 'package:project_x/modules/post_feed/needadvice.dart';
+import 'package:project_x/modules/post_feed/needhelp.dart';
 import 'package:project_x/modules/post_feed/needsimran.dart';
+import 'package:project_x/modules/post_feed/project_idea.dart';
 
 class postHomeUI extends StatefulWidget {
   @override
@@ -18,7 +26,12 @@ class _postHomeUIState extends State<postHomeUI> {
           backgroundColor:Color.fromRGBO(35, 43, 43, 1.0) ,
           centerTitle:false,
           leading: IconButton(
-            icon: Icon(LineAwesomeIcons.arrow_left,color: Colors.white,size: 40.0,), onPressed: null),
+            onPressed:(){
+              setState(() {
+                Navigator.of(context).pushNamedAndRemoveUntil('/home', ModalRoute.withName('/post'));
+              });
+            },
+            icon: Icon(LineAwesomeIcons.arrow_left,color: Colors.white,size: 40.0,)),
           flexibleSpace:Container(
             margin: EdgeInsets.only(left:20.0,bottom:0.0,right:20.0),
             child: Align(
@@ -143,15 +156,15 @@ class _postHomeUIState extends State<postHomeUI> {
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children:<Widget>[
                               ListTile(
-                                // onTap: () {
-                                //   Navigator.push(
-                                //     context,
-                                //     MaterialPageRoute(
-                                //       builder: (context) =>
-                                //       needSimranUI(),
-                                //     ),
-                                //   );
-                                // },
+                                onTap: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) =>
+                                      needHelpUI(),
+                                    ),
+                                  );
+                                },
                                 leading: Icon(
                                   LineAwesomeIcons.slack,
                                   color:Colors.white,
@@ -191,6 +204,15 @@ class _postHomeUIState extends State<postHomeUI> {
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children:<Widget>[
                               ListTile(
+                                onTap: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) =>
+                                      needAdviceUI(),
+                                    ),
+                                  );
+                                },
                                 leading: Icon(
                                   LineAwesomeIcons.slack,
                                   color:Colors.white,
@@ -223,6 +245,15 @@ class _postHomeUIState extends State<postHomeUI> {
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children:<Widget>[
                               ListTile(
+                                onTap: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) =>
+                                      codeReviewUI(),
+                                    ),
+                                  );
+                                },
                                 leading: Icon(
                                   LineAwesomeIcons.slack,
                                   color:Colors.white,
@@ -261,6 +292,15 @@ class _postHomeUIState extends State<postHomeUI> {
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children:<Widget>[
                               ListTile(
+                                onTap: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) =>
+                                      designReviewUI(),
+                                    ),
+                                  );
+                                },
                                 leading: Icon(
                                   LineAwesomeIcons.slack,
                                   color:Colors.white,
@@ -292,6 +332,15 @@ class _postHomeUIState extends State<postHomeUI> {
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children:<Widget>[
                               ListTile(
+                                onTap: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) =>
+                                      project_ideaUI(),
+                                    ),
+                                  );
+                                },
                                 leading: Icon(
                                   LineAwesomeIcons.slack,
                                   color:Colors.white,
@@ -330,6 +379,15 @@ class _postHomeUIState extends State<postHomeUI> {
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children:<Widget>[
                               ListTile(
+                                onTap: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) =>
+                                      resourcesUI(),
+                                    ),
+                                  );
+                                },
                                 leading: Icon(
                                   LineAwesomeIcons.slack,
                                   color:Colors.white,
@@ -362,6 +420,15 @@ class _postHomeUIState extends State<postHomeUI> {
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children:<Widget>[
                               ListTile(
+                                onTap: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) =>
+                                      linkedINUI(),
+                                    ),
+                                  );
+                                },
                                 leading: Icon(
                                   LineAwesomeIcons.slack,
                                   color:Colors.white,
@@ -382,17 +449,15 @@ class _postHomeUIState extends State<postHomeUI> {
                           ),
                         ),
                       ),
-
-                  ],),
+                    ],
+                  ),
                   Padding(padding: EdgeInsets.only(top: 20.0)),
-
-
-          ],),),)
+                ],
+              ),
+            ),
+          )
         ],
       ),
-
-
-      
     );
   }
 }
